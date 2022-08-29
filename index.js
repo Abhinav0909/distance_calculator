@@ -21,11 +21,9 @@ function initMap() {
             destination: end,
             travelMode: 'DRIVING'
         };
-        console.log(request)
         directionsService.route(request, function (result, status) {
             if (status == 'OK') {
                 directionsRenderer.setDirections(result);
-                console.log(result);
                 document.getElementById('distance').innerHTML = result.routes[0].legs[0].distance.text;
             }
         });
