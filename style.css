@@ -23,3 +23,8 @@
    text-align:center;
    min-height: 50px;
 }
+#map{
+    width: 920px; 
+    height: 480px; 
+    margin: auto
+}
