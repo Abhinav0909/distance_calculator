@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div >
+      <form id="locationform" autocomplete="on" class="locationform">
+        <div class="input-container">
+        <input
+          id="address"
+          name="address1"
+          type="text"
+          placeholder="Enter your first address"
+          list="options"
+          class ='input-floating'
+        />
+
+        <input
+          id="address1"
+          name="address2"
+          type="text"
+          placeholder="Enter your second address"
+          list="options"
+          class ='input-floating'
+        />
+      </div>
+        <button type="button" id="calculator" class="calculator">Calculate distance</button>
+        <div id="distance" class="distance-text"></div>
+      </form>
+    </div>
+    <div id="map" style="width: 920px; height: 480px; margin: auto"></div>
+  </body>
+  <script src="./index.js"></script>
+  <script src="./global.js"></script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=<YOUR_API_KEY>&libraries=places&callback=initMap"
+  ></script>
+</html>

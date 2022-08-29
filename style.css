@@ -1,0 +1,25 @@
+.input-floating{
+    margin: 8px 4px;
+    padding: 2px 4px;
+    border:none;
+    border-bottom: 1px solid black;
+
+}
+.input-floating:focus,.input-floating:hover{
+   outline: none;
+}
+.calculator{
+    display: block;
+    margin: 8px auto;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border:1px solid pink;
+
+}
+.input-container{
+    text-align: center;
+}
+.distance-text{
+   text-align:center;
+   min-height: 50px;
+}
